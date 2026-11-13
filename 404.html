@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Trang đã chuyển địa chỉ</title>
+<script>
+// Link cũ grammar-homework/<đường dẫn> → ielts-homework/<đường dẫn> (thư viện → yumi-english)
+var p = location.pathname.replace(/^\/grammar-homework\/?/, '');
+var to = /^library(\/|$)/.test(p) ? 'https://miathoday.github.io/yumi-english/' + p.replace(/^library\/?/, '') : 'https://miathoday.github.io/ielts-homework/' + p;
+location.replace(to + location.search + location.hash);
+</script></head><body><p>Đang chuyển sang địa chỉ mới…</p></body></html>
